@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thank You</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        font-family: "Segoe UI", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .thank-you {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        animation: fadeIn 0.5s ease-out;
+      }
+
+      .thank-you h1 {
+        color: #4e87e0;
+        margin-bottom: 10px;
+      }
+
+      .thank-you p {
+        color: #555;
+        font-size: 16px;
+      }
+
+      .thank-you a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #4e87e0;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background 0.3s;
+      }
+
+      .thank-you a:hover {
+        background: #3f76db;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="thank-you">
+      <h1>Thank You!</h1>
+      <p>You have successfully registered.</p>
+      <a href="index.html">Go to Login</a>
+    </div>
+  </body>
+</html>

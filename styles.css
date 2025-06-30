@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  font-family: "Segoe UI", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  background: #fff;
+  padding: 40px 30px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.progress-container {
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #66a6ff;
+  transition: width 0.3s;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #66a6ff;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  color: #888;
+  pointer-events: none;
+  background: white;
+  padding: 0 4px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  color: #66a6ff;
+}
+
+.form-group small {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+  height: 14px;
+}
+
+.form-group.success input {
+  border-color: #4caf50;
+}
+
+.form-group.success small {
+  color: #4caf50;
+}
+
+.form-group.error input {
+  border-color: red;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #66a6ff, #4e87e0);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(102, 166, 255, 0.4);
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #4e87e0, #3f76db);
+  transform: translateY(-2px);
+}
+
+.register-btn:active {
+  transform: scale(0.98);
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-text a:hover {
+  color: #004ab3;
+}
